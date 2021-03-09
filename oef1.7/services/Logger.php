@@ -1,6 +1,6 @@
 <?php
 
-class Logger
+class Logger implements LoggerInterface
 {
     private $fp;
     private $logfile;

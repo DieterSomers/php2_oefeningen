@@ -2,18 +2,21 @@
 class Container
 {
     private $logfile;
+    private $debuglogfile;
     private $dbconfig;
 
     private $messageService;
     private $dbManager;
     private $logger;
+    private $debugLogger;
     private $validator;
     private $loginChecker;
 
-    public function __construct( string $logfile, array $dbconfig)
+    public function __construct( string $logfile, string $debuglogfile, $dbconfig)
     {
         $this->logfile = $logfile;
         $this->dbconfig = $dbconfig;
+        $this->debuglogfile = $debuglogfile;
     }
 
     public function getMessageService()
@@ -32,6 +35,15 @@ class Container
         }
 
         return $this->logger;
+    }
+
+    public function getDebugLogger()
+    {
+        if ( $this->debugLogger === null ) {
+            $this->debugLogger = new DebugLogger( $this->debuglogfile );
+        }
+
+        return $this->debugLogger;
     }
 
     public function getDBManager()

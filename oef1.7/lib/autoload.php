@@ -18,10 +18,13 @@ require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/models/User.php";
 //services
 require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/services/MessageService.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/services/DBManager.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/services/LoggerInterface.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/services/Logger.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/services/DebugLogger.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/services/Validator.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/services/LoginChecker.php";
 require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/services/Container.php";
+require_once $_SERVER['DOCUMENT_ROOT'] . $app_root . "/export/AbstractCSVExport.php";
 
 session_start();
 
@@ -32,7 +35,7 @@ require_once "access_control.php";
 include "config.php";
 
 //initialize Container
-$container = new Container( $logfile, $dbconfig );
+$container = new Container( $logfile, $debuglogfile, $dbconfig );
 
 //initialize $old_post
 $old_post = [];

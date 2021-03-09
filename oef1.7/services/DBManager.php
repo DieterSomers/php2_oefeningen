@@ -31,7 +31,7 @@ class DBManager
         return $this->conn;
     }
 
-    function GetData($sql)
+    function GetData($sql, $fetch_options = null)
     {
         //define, log and execute query
         $this->logger->Log(date("Y-m-d H:i:s: ") . $sql );
@@ -39,7 +39,20 @@ class DBManager
 
         //return result (if there is any)
         if ($result->rowCount() > 0) {
-            $rows = $result->fetchAll(PDO::FETCH_BOTH); //geeft array zoals [0] => 1, ['lan_id'] => 1, ...
+
+            if ( $fetch_options == null )
+            {
+                $rows = $result->fetchAll(PDO::FETCH_BOTH);
+            }
+            if ( $fetch_options == 'assoc' )
+            {
+                $rows = $result->fetchAll(PDO::FETCH_ASSOC);
+            }
+            if ( $fetch_options == 'num' )
+            {
+                $rows = $result->fetchAll(PDO::FETCH_NUM);
+            }
+
             return $rows;
         }
         else return [];

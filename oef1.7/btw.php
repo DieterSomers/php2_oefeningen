@@ -19,11 +19,14 @@ PrintNavbar();
     $container->getMessageService()->ShowErrors();
     $container->getMessageService()->ShowInfos();
 
+    //debugging
+    $container->getDebugLogger()->Log("Ze roepen de pagina BTW codes weer op ");
+
     //get data
     $data = $container->getDBManager()->GetData( "select * from eu_btw_codes" );
 
     $output ="";
-    $output .= "<a class='btn btn-info' role='button' href='lib/export_btw.php'>Export CSV</a>";
+    $output .= "<a class='btn btn-info' role='button' href='export/export_btw.php'>Export CSV</a>";
     $output .= "<div><br></div>";
 
     $output .= "<table class='table table-striped'>";
