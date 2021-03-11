@@ -34,3 +34,5 @@
 2021-02-12 00:28:30: select * from images
 2021-02-12 00:53:36: SELECT * FROM user WHERE usr_email='anton@verlinden.be' 
 2021-02-12 00:53:38: select * from images
+2021-03-11 08:04:08: SELECT * FROM user WHERE usr_email='dieter_somers_at@hotmail.com' 
+2021-03-11 08:04:10: select * from images
