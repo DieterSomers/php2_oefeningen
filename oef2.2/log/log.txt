@@ -120,3 +120,53 @@
 2021-03-11 08:47:25: select * from images
 2021-03-11 08:48:37: select * from images
 2021-03-11 10:51:23: select * from images
+2021-03-17 23:19:46: select * from eu_btw_codes
+2021-03-17 23:20:38: select * from eu_btw_codes
+2021-03-17 23:21:31: select * from eu_btw_codes
+2021-03-17 23:22:41: select * from eu_btw_codes
+2021-03-17 23:26:14: select * from eu_btw_codes where eub_id=4
+2021-03-17 23:26:53: select * from eu_btw_codes where eub_id=4
+2021-03-17 23:31:53: select * from eu_btw_codes
+2021-03-17 23:34:38: INSERT INTO eu_btw_codes (eub_land, eub_code) VALUES (Japan, JAP)
+2021-03-17 23:38:29: INSERT INTO eu_btw_codes (eub_land, eub_code) VALUES (Japan, JAP)
+2021-03-17 23:40:01: INSERT INTO eu_btw_codes (eub_land, eub_code) VALUES ( Japan, JAP )
+2021-03-17 23:44:28: INSERT INTO eu_btw_codes (eub_land, eub_code) VALUES ( Japan, JAP )
+2021-03-17 23:47:35: INSERT INTO eu_btw_codes SET eub_land = Japan, eub_code = JAP )
+2021-03-17 23:47:59: INSERT INTO eu_btw_codes SET eub_land = Japan, eub_code = JAP
+2021-03-17 23:48:41: INSERT INTO eu_btw_codes SET eub_land = Japan, eub_code = JAP
+2021-03-17 23:51:11: INSERT INTO eu_btw_codes SET eub_land = 'Japan', eub_code = 'JAP'
+2021-03-17 23:57:51: INSERT INTO eu_btw_codes SET eub_land = 'Japan', eub_code = 'JAP'
+2021-03-17 23:57:53: select max(eub_id) from eu_btw_codes
+2021-03-18 00:01:26: INSERT INTO eu_btw_codes SET eub_land = 'Japan', eub_code = 'JAP'
+2021-03-18 00:01:28: select max(eub_id) from eu_btw_codes
+2021-03-18 00:11:25: UPDATE eu_btw_codes SET eub_land = 'JAPAN', eub_code = 'JA' WHERE eub_id=33
+2021-03-18 00:11:59: UPDATE eu_btw_codes SET eub_land = 'Japan', eub_code = 'JA' WHERE eub_id=33
+2021-03-18 00:15:51: DELETE FROM eu_btw_codes WHERE eub_id=33
+2021-03-18 00:22:50: select * from eu_btw_codes where eub_id=
+2021-03-18 00:23:25: select * from eu_btw_codes
+2021-03-18 00:25:16: select * from eu_btw_codes
+2021-03-18 00:26:04: select * from eu_btw_codes where eub_id=
+2021-03-18 00:29:49: select * from eu_btw_codes where eub_id=
+2021-03-18 00:30:31: select * from eu_btw_codes
+2021-03-18 00:30:56: select * from eu_btw_codes
+2021-03-18 00:31:10: select * from eu_btw_codes where eub_id=
+2021-03-18 00:31:48: select * from eu_btw_codes
+2021-03-18 00:31:57: select * from eu_btw_codes where eub_id=
+2021-03-18 00:33:27: select * from eu_btw_codes where eub_id=4
+2021-03-18 00:33:35: select * from eu_btw_codes where eub_id=
+2021-03-18 00:33:42: select * from eu_btw_codes where eub_id=
+2021-03-18 00:34:17: select * from eu_btw_codes
+2021-03-18 00:34:39: select * from eu_btw_codes
+2021-03-18 00:34:55: select * from eu_btw_codes
+2021-03-18 00:35:36: select * from eu_btw_codes
+2021-03-18 00:37:36: select * from eu_btw_codes
+2021-03-18 00:38:03: select * from eu_btw_codes where eub_id=4
+2021-03-18 00:38:10: select * from eu_btw_codes where eub_id=
+2021-03-18 00:45:45: select * from eu_btw_codes where eub_id=4
+2021-03-18 00:45:52: select * from eu_btw_codes where eub_id=4q
+2021-03-18 00:46:16: select * from eu_btw_codes where eub_id=4q
+2021-03-18 00:46:20: select * from eu_btw_codes where eub_id=4q
+2021-03-18 00:46:33: select * from eu_btw_codes where eub_id=4q
+2021-03-18 00:46:37: select * from eu_btw_codes where eub_id=4q
+2021-03-18 00:50:06: select * from eu_btw_codes where eub_id=4q
+2021-03-18 00:50:20: select * from eu_btw_codes where eub_id=4
